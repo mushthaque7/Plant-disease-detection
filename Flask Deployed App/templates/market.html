@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Supplement Market
+{% endblock pagetitle %}
+
+{% block body %}
+
+<br>
+<div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>Supplements</b></h1>
+        <p class="lead" style="font-weight: 500;color: black;">Buy Supplements & Fertilizer at one place</p>
+    </div>
+</div>
+<div class="row p-3">
+    {% for index in range(0, supplement_name | length) %}
+    <div class="col">
+        <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+            <center>
+                {% if index in class_keys and index != 3 and index != 4 and index != 6 and index != 10 and index != 14 and index != 17 and index != 19 and
+                    index != 22 and index != 23 and index != 24 and index != 27 and index != 37 %}
+                    <h5>Supplements<b style="color: red;"> (Diseased):</b></h5>
+                {% else %}
+                    <h5>Fertilizer<b style="color: green;"> (Healthy):</b></h5>
+                {% endif %}
+                <br>
+                <img src={{supplement_image[index]}} width="200" height="250">
+                <br>
+                <br>
+                <h6>For {{disease[index]}}</h6>
+                <p>{{supplement_name[index]}}</p>
+                <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                                                                style="background-color: #05380b;">Buy Product</button></a>
+            </center>
+        </div>
+    </div>
+{% endfor %}
+
+</div>
+{% endblock body %}

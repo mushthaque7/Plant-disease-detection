@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Dr.Plant
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+    letter-spacing: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .style-banner {
+  padding-top: 15em;
+}
+
+.style-banner h5 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.two-demo-button p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  width: 50%;
+  margin: 0 auto;
+}
+.main-top {
+  background: linear-gradient(rgba(46, 46, 46, 0.493), rgba(27, 27, 27, 0.466)),
+    url(../static/images/b7.jpg) no-repeat bottom;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  min-height: 800px;
+}
+.main-banner h4 {
+  color: #fff;
+  font-size: 2.7em;
+  font-weight: 700;
+}
+.about-two-grids{
+color: rgb(129, 40, 189);
+}
+.about-oil-w3layouts {
+  padding: 3em 1em;
+  color: #000;
+  background: #efefef;
+  box-shadow: 0px 0px 10px #cecece;
+}
+.img-fluid{
+  max-width: 100%;
+  height: 300px;
+  margin-left:50px
+}
+img{
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.about-icon span {
+  font-size: 40px;
+  color: #643e88;
+}
+
+.about-fashion-two img,
+.about-fashion-one img {
+  box-shadow: -9px 10px 3px #fd5c63;
+  box-shadow: -5px 2px 9px #afafaf;
+}
+.collection-w3layouts h4,
+.ser-sevice-grid h4,
+.clients-txt-ile h4,
+.contact-list-grid h4,
+.blog-left-sub h4 a,
+.comments-grid-right h4,
+.single-title h4 {
+  font-size: 25px;
+  color: #6e419d;
+  font-weight: bold;
+}
+.title {
+  font-size: 30px;
+  color: #703fa3;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about-grid-title p,
+.about-para-txt p{
+  font-size: 14px;
+  color: #4c4c4c;
+  line-height: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+<div class='mobile p-5'>
+  <div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+      <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color:red;"><b>Note</b></h1>
+      <p class="lead" style="font-weight: 500;color: black;">Please Open Thes Site On Laptop/PC For Better Experience</p>
+      <p class="lead" style="font-weight: 500;color: black;">Thank You</p>    
+    </div>
+</div>
+</div>
+<div class="main-top" id="home">
+  <!-- banner -->
+  <div class="main-banner text-center">
+    <div class="container">
+      <div class="style-banner">
+        <h4 class="mb-2">Welcome To Dr.Plant</h4>
+        <h5>Offering Farming Solutions Worldwide
+        </h5>
+      </div>
+      <div class="two-demo-button mt-md-4 mt-3">
+        <p> Developing models for making disease detection easy and providing solutions for improving crop production
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+  <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+    <div class="row">
+      <div class="col-lg-6 about-imgs-txt pt-3">
+        <img src="../static/images/b1.jpg" alt="news image" class="img-fluid" style="border-radius: 8px;">
+      </div>
+      <div class="col-lg-6 text-justify about-two-grids pt-3"style="width: 600px;">
+        <h3 class="title text-center">About</h3>
+        <div class="about-para-txt">
+          <p>Food security for billions of people on earth requires minimizing crop damage by timely detection of
+            diseases.Developing methods for detection of plant diseases serves the dual purpose of increasing crop
+            yield and reducing pesticide use without knowing about the proper disease. Along with development of
+            better crop varieties, disease detection is thus paramount goal for achieving food security. The
+            traditional method of disease detection has been to use manual examination by either farmers or experts,
+            which can be time consuming and costly, proving infeasible for millions of small and medium sized farms
+            around the world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service pb-5 " id="features">
+  <div class="container ">
+    <h3 class="title text-center mb-3">Features</h3>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+        <div class="ser-Agriculture-grid">
+          <div class="about-icon mb-md-4 mb-3">
+            <span class="fa fa-viadeo" aria-hidden="true"></span>
+          </div>
+          <div class="ser-sevice-grid">
+            <h4 class="pb-3">Easy Detection</h4>
+            <p>Just need to click and upload leaf image.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+        <div class="ser-Agriculture-grid">
+          <div class="about-icon mb-md-4 mb-3">
+            <span class="fa fa-pagelines" aria-hidden="true"></span>
+          </div>
+          <div class="ser-sevice-grid">
+            <h4 class="pb-3">Cause and Solution</h4>
+            <p>Provides the cause and solution of the identified diseases.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+        <div class="ser-Agriculture-grid">
+          <div class="about-icon mb-md-4 mb-3">
+            <span class="fa fa-leaf" aria-hidden="true"></span>
+          </div>
+          <div class="ser-sevice-grid">
+            <h4 class="pb-3">Large Plant Support</h4>
+            <p>Supports around 14 different types of plants.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog_w3ls py-3 pb-5 pt-10" id="test">
+  <div class="container pb-xl-5 pb-lg-3">
+    <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3"> Test Your Plants</h3>
+    <div class="row" style="justify-content: center;">
+        <div class="form-group text-center">
+          <a href="/index">
+            <button class="btn btn-primary" type="submit"> Test </button>
+          </a>
+        </div>
+    </div>
+    <br />
+  </div>
+
+</section>
+{% endblock body %}
